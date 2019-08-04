@@ -8,5 +8,5 @@
 4. 根据Render tree信息进行布局处理（Layout）
 5. 对页面元素进行绘制（Painting）
 
-![](E:\Github-Henryk\Henryk_Note\pic\webkitflow.png)
+![avatar](./pic/webkitflow.png)
 
