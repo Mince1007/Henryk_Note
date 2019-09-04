@@ -17,9 +17,37 @@ Prototype是JavaScript中的对象的一个特殊的内置属性，就是对于�
 ### React Diff算法
 广度优先
 节点跨层移动
-![avatar](./pic/diff-dommov-e.png)
+![avatar](./pic/diff-dommove.png)
 
-### 问题定位技巧
-1.调用栈
-2.断点监听
-3.更多的是自己看代码不要太偏执，都没看完或者看懂整体逻辑，就不应该去提问，很容易造成依赖；起码看不懂的话先问看不懂的，再去看整体逻辑和业务分析，再定位问题！这很关键！
+### Arguments
+
+arguments是传递给函数的参数的类数组对象；
+
+类似于数组，但是只有length属性，没有其它数组的属性
+
+### JS new的过程
+
+new 创建一个对象类型的实例/或者具有构造函数的内置对象的实例（函数实例化）
+
+```javascript
+//eg:
+function Base () {
+    this.name = 'Henryk';
+}
+var a = new Base(); //a
+```
+
+创建对象实例的过程：
+
+1.创建一个新对象（a）
+
+2.将新对象（a）的`__proto__`指向构造函数（Base）的prototype对象
+
+3.将构造函数的作用域赋值给新对象（Base的this指向新对象a）
+
+4.执行构造函数中的代码（定义属性：Base中的this.name，为新对象添加属性）
+
+5.返回新对象（a）
+
+
+
