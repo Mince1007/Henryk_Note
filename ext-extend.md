@@ -23,10 +23,10 @@ BaseClass.prototype = {
 
 /*
 var p1 = new BaseClass({
-	name: 'lzj'
+	name: 'chl'
 })
 
-p1.name // 'lzj'
+p1.name // 'chl'
 
 */
 
@@ -182,7 +182,7 @@ Employee = Ext.extend(Ext.util.Observable, {
 });
 
 var newEmployee = new Employee({
-    name:'lzj',
+    name:'chl',
     listeners: {
         quit: function() {
         // By default, "this" will be the object that fired the event.
@@ -191,7 +191,7 @@ var newEmployee = new Employee({
     }
 });
 
-//'lzj has quit'
+//'chl has quit'
 ```
 
 
